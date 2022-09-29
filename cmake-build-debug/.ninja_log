@@ -1,0 +1,6 @@
+# ninja log v5
+9	881	6861833086766960	CMakeFiles/d20_Combat_Tracker.dir/CharSheet.cpp.obj	6febdb8fba91e419
+745	872	6861833349162661	d20_Combat_Tracker.exe	872ee45b5ea981f8
+4	844	6861833086386883	CMakeFiles/d20_Combat_Tracker.dir/main.cpp.obj	66432c83d8401060
+14	930	6861833087257068	CMakeFiles/d20_Combat_Tracker.dir/selectionEnums.cpp.obj	fc079d924810f4cc
+4	744	6861833347912379	CMakeFiles/d20_Combat_Tracker.dir/CharCreationHelperFunctions.cpp.obj	909149a904fda7c

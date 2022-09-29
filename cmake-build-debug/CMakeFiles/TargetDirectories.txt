@@ -1,0 +1,3 @@
+C:/Users/ulver/CLionProjects/d20-Combat-Tracker/cmake-build-debug/CMakeFiles/d20_Combat_Tracker.dir
+C:/Users/ulver/CLionProjects/d20-Combat-Tracker/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ulver/CLionProjects/d20-Combat-Tracker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
