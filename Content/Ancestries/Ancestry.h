@@ -10,27 +10,15 @@
 #include <vector>
 
 class Ancestry {
-protected:
-    int initialHitPoints{};
-    int speed{};
-    int ancestralBoostSTR{};
-    int ancestralBoostDEX{};
-    int ancestralBoostCON{};
-    int ancestralBoostINT{};
-    int ancestralBoostWIS{};
-    int ancestralBoostCHA{};
-    int ancestralAbilityBoosts{};
-    int ancestralBonusFeats{};
-    std::string size;
-    std::vector<std::string>type;
-    std::vector<std::string>languages;
-    int ancestralBoostLang{};
-    std::string visionType;
 
 public:
     Ancestry();
 
     virtual ~Ancestry();
+
+    const std::string &getAncestryName() const;
+
+    void setAncestryName(const std::string &ancestryName);
 
     int getInitialHitPoints() const;
 
@@ -91,6 +79,24 @@ public:
     const std::string &getVisionType() const;
 
     void setVisionType(const std::string &visionType);
+
+protected:
+    std::string ancestryName;
+    int initialHitPoints{};
+    int speed{};
+    int ancestralBoostSTR{};
+    int ancestralBoostDEX{};
+    int ancestralBoostCON{};
+    int ancestralBoostINT{};
+    int ancestralBoostWIS{};
+    int ancestralBoostCHA{};
+    int ancestralAbilityBoosts{};
+    int ancestralBonusFeats{};
+    std::string size;
+    std::vector<std::string>type;
+    std::vector<std::string>languages;
+    int ancestralBoostLang{};
+    std::string visionType;
 };
 
 

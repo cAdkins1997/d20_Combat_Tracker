@@ -14,7 +14,8 @@ protected:
     std::string playerName;
     std::string characterName;
 
-    ClassesEnum charClass = ClassErr;
+    std::string charClass;
+    std::string charAncestry;
 
 public:
     CharSheet();
@@ -22,6 +23,15 @@ public:
     virtual ~CharSheet();
 
 public:
+
+    const std::string &getCharacterClass() const;
+
+    void setCharacterClass(const std::string &characterClass);
+
+    const std::string &getCharAncestry() const;
+
+    void setCharAncestry(const std::string &charAncestry);
+
     const std::string &getPlayerName();
 
     void setPlayerName(const std::string &playerName);
@@ -30,7 +40,7 @@ public:
 
     void setCharacterName(const std::string &characterName);
 
-    ClassesEnum getCharClass() ;
+    std::basic_string<char> getCharClass() ;
 
     void setCharClass(ClassesEnum charClass);
 };

@@ -95,3 +95,4 @@ const std::string &Elf::getVisionType1() const {
 void Elf::setVisionType1(const std::string &visionType) {
     Elf::visionType = visionType;
 }
+

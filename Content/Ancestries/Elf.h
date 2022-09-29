@@ -8,8 +8,9 @@
 
 #include "Ancestry.h"
 
-class Elf : Ancestry {
+class Elf : public Ancestry {
 protected:
+    std::string ancestryName = "Elf";
     int initialHitPoints = 6;
     int speed = 30;
     int ancestralBoostDEX = 2;
@@ -69,7 +70,6 @@ public:
     const std::string &getVisionType1() const;
 
     void setVisionType1(const std::string &visionType);
-
 };
 
 

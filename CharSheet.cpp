@@ -9,6 +9,7 @@
 }
 
 void CharSheet::setPlayerName(const std::string &playerName) {
+    CharSheet::playerName = playerName;
 }
 
 const std::string &CharSheet::getCharacterName() {
@@ -19,12 +20,20 @@ void CharSheet::setCharacterName(const std::string &characterName) {
     CharSheet::characterName = characterName;
 }
 
- ClassesEnum CharSheet::getCharClass() {
+ std::basic_string<char> CharSheet::getCharClass() {
     return charClass;
 }
 
 void CharSheet::setCharClass(ClassesEnum charClass) {
     CharSheet::charClass = charClass;
+}
+
+const std::string &CharSheet::getCharAncestry() const {
+    return charAncestry;
+}
+
+void CharSheet::setCharAncestry(const std::string &charAncestry) {
+    CharSheet::charAncestry = charAncestry;
 }
 
 CharSheet::CharSheet() = default;

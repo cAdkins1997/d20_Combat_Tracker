@@ -127,3 +127,11 @@ const std::string &Ancestry::getVisionType() const {
 void Ancestry::setVisionType(const std::string &visionType) {
     Ancestry::visionType = visionType;
 }
+
+const std::string &Ancestry::getAncestryName() const {
+    return ancestryName;
+}
+
+void Ancestry::setAncestryName(const std::string &ancestryName) {
+    Ancestry::ancestryName = ancestryName;
+}

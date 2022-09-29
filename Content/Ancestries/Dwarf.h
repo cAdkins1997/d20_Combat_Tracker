@@ -8,8 +8,9 @@
 
 #include "Ancestry.h"
 
-class Dwarf : Ancestry {
+class Dwarf : public Ancestry {
 protected:
+    std::string ancestryName = "Dwarf";
     int initialHitPoints = 10;
     int speed = 20;
     int ancestralBoostCON = 2;
