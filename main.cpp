@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CharCreationHelperFunctions.h"
+#include "Creation/CharCreationHelperFunctions.h"
 
 int main() {
     creationDriver();
