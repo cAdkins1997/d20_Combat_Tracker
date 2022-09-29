@@ -6,8 +6,8 @@
 #define D20_COMBAT_TRACKER_CHARCLASSENUMS_H
 
 #endif //D20_COMBAT_TRACKER_CHARCLASSENUMS_H
-enum Fighter {
-    hitPointsPerLevel = 10,
+struct Fighter {
+    std::vector,
 
 };
 enum Rogue {};
