@@ -1,6 +1,16 @@
 # ninja log v5
 9	881	6861833086766960	CMakeFiles/d20_Combat_Tracker.dir/CharSheet.cpp.obj	6febdb8fba91e419
-745	872	6861833349162661	d20_Combat_Tracker.exe	872ee45b5ea981f8
-4	844	6861833086386883	CMakeFiles/d20_Combat_Tracker.dir/main.cpp.obj	66432c83d8401060
+1403	1692	6861896206289212	d20_Combat_Tracker.exe	acac8a5690eb5605
+23	1383	6861896203245521	CMakeFiles/d20_Combat_Tracker.dir/Creation/selectionEnums.cpp.obj	11d74e11cce7712d
+13	1373	6861896203125501	CMakeFiles/d20_Combat_Tracker.dir/main.cpp.obj	66432c83d8401060
 14	930	6861833087257068	CMakeFiles/d20_Combat_Tracker.dir/selectionEnums.cpp.obj	fc079d924810f4cc
 4	744	6861833347912379	CMakeFiles/d20_Combat_Tracker.dir/CharCreationHelperFunctions.cpp.obj	909149a904fda7c
+34	1390	6861896203305530	CMakeFiles/d20_Combat_Tracker.dir/Creation/CharCreationHelperFunctions.cpp.obj	4bd3f087eb7f1fe8
+18	1391	6861896203325538	CMakeFiles/d20_Combat_Tracker.dir/Creation/CharSheet.cpp.obj	667274c8f0539e7a
+39	1397	6861896203385551	CMakeFiles/d20_Combat_Tracker.dir/Content/Human.cpp.obj	10a834f93f23e0e7
+29	1403	6861896203445564	CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestry.cpp.obj	e2b83af665a7e2af
+4	941	6861898988195215	CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Human.cpp.obj	2c0cfe48c94d8b72
+8	1101	6861898989725564	CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Ancestry.cpp.obj	4190711cdd0b885e
+17	1138	6861898990155665	CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Dwarf.cpp.obj	8ea160cabd4f66e
+12	1221	6861898991005847	CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Elf.cpp.obj	572601ed9ec745b5
+1224	1504	6861898993796482	d20_Combat_Tracker.exe	bbc30096748592bc

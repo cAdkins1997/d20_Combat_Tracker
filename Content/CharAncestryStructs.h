@@ -1,7 +1,7 @@
 //
 // Created by ulver on 9/29/2022.
 //
-
+/*
 #ifndef D20_COMBAT_TRACKER_CHARANCESTRYSTRUCTS_H
 #define D20_COMBAT_TRACKER_CHARANCESTRYSTRUCTS_H
 
@@ -10,16 +10,17 @@
 
 struct Human {
     int initialHitPoints = 8;
-    int speed = 25;
+    int speed = 30;
     int ancestralBoostSTR = 0;
     int ancestralBoostDEX = 0;
     int ancestralBoostCON = 0;
     int ancestralBoostINT = 0;
     int ancestralBoostWIS = 0;
     int ancestralBoostCHA = 0;
-    int ancestralAbilityBoosts = 2;
+    int ancestralAbilityBoosts = 1;
+    int ancestralBonusFeats = 1;
     std::string size = "medium";
-    std::vector<std::string>traits = {"Human", "Humanoid"};
+    std::vector<std::string>type = {"Human", "Humanoid"};
     std::vector<std::string>languages = {"Common"};
     int ancestralBoostLang = 1;
     std::string visionType = "Normal";
@@ -34,14 +35,15 @@ struct Elf{
     int ancestralBoostINT = 2;
     int ancestralBoostWIS = 0;
     int ancestralBoostCHA = 0;
-    int ancestralAbilityBoosts = 1;
+    int ancestralAbilityBoosts = 0;
+    int ancestralBonusFeats = 0;
     std::string size = "medium";
-    std::vector<std::string>traits = {"Elf", "Humanoid"};
+    std::vector<std::string>type = {"Elf", "Humanoid"};
     std::vector<std::string>languages = {"Common", "Elf"};
     std::vector<std::string>validLanguages = {"Celestial", "Draconic", "Gnoll", "Gnomish", "Goblin", "Orcish", "Sylvan"};
+    std::vector<std::string>immunities = {"sleep"};
     std::string visionType = "Low-Light";
     int ancestralBoostLang = 0;
-
 };
 
 struct Dwarf{
@@ -53,7 +55,8 @@ struct Dwarf{
     int ancestralBoostINT = 0;
     int ancestralBoostWIS = 2;
     int ancestralBoostCHA = -2;
-    int ancestralAbilityBoosts = 1;
+    int ancestralAbilityBoosts = 0;
+    int ancestralBonusFeats = 0;
     std::string size = "medium";
     std::vector<std::string>traits = {"Dwarf", "Humanoid"};
     std::vector<std::string>languages = {"Common", "Dwarven"};
@@ -63,3 +66,4 @@ struct Dwarf{
 };
 
 #endif //D20_COMBAT_TRACKER_CHARANCESTRYSTRUCTS_H
+*/
