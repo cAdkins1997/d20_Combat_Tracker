@@ -9,7 +9,7 @@
 
 void charClassSelection(CharSheet charSheet, bool isTest){
     int charClassNumber;
-    std::cout << "What is the the character's class: \n 1.) Fighter \n 2.) Ranger \n 3.) Rouge";
+    std::cout << "What is the the character's class: \n 1.) Fighter \n 2.) Ranger \n 3.) Rouge \n";
     std::cin >> charClassNumber;
     if (charClassNumber == 1){
         charSheet.setCharClass("Fighter");
@@ -19,6 +19,9 @@ void charClassSelection(CharSheet charSheet, bool isTest){
     }
     else if (charClassNumber == 3){
         charSheet.setCharClass("Rogue");
+    }
+    if (isTest){
+        std::cout << "The character class is: " + charSheet.getCharClass();
     }
 }
 
@@ -67,5 +70,6 @@ void creationDriver(){
         nameSelection(characterSheet, "What is the player's name?: \n", true, "playerName");
         nameSelection(characterSheet, "What is the character's name?: \n", true, "characterName");
         ancestrySelection(characterSheet, true);
+        charClassSelection(characterSheet, true);
     }
 }
