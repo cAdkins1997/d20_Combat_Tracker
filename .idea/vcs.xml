@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/d20-Combat-Tracker" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/d20-Combat-Tracker/d20-Combat-Tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/d20-Combat-Tracker/d20_Combat_Tracker" vcs="Git" />
   </component>
 </project>

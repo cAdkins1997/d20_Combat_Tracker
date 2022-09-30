@@ -16,8 +16,9 @@
 void creationDriver();
 
 void nameSelection(CharSheet charSheet, const std::string& str, bool isTest, const std::string& nameType);
-void ancestrySelection(CharSheet charSheet, const class Human& humanObject, const class Elf& elfObject, const class Dwarf& dwarfObject, bool isTest);
 
-std::string ObjectToString();
+void ancestrySelection(CharSheet charSheet, bool isTest);
+
+void charClassSelection(CharSheet charSheet, bool isTest);
 
 #endif //D20_COMBAT_TRACKER_CHARCREATIONHELPERFUNCTIONS_H

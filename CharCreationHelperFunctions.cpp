@@ -7,17 +7,35 @@
 #include "Content/Ancestries/Elf.h"
 #include "Content/Ancestries/Dwarf.h"
 
-void ancestrySelection(CharSheet charSheet, const class Human& humanObject, const class Elf& elfObject, const class Dwarf& dwarfObject, bool isTest){
+void charClassSelection(CharSheet charSheet, bool isTest){
+    int charClassNumber;
+    std::cout << "What is the the character's class: \n 1.) Fighter \n 2.) Ranger \n 3.) Rouge";
+    std::cin >> charClassNumber;
+    if (charClassNumber == 1){
+        charSheet.setCharClass("Fighter");
+    }
+    else if (charClassNumber == 2){
+        charSheet.setCharClass("Ranger");
+    }
+    else if (charClassNumber == 3){
+        charSheet.setCharClass("Rogue");
+    }
+}
+
+void ancestrySelection(CharSheet charSheet, bool isTest){
     int ancestryNumber;
     std::cout << "What is the character's ancestry: \n 1.) Human \n 2.) Elf \n 3.) Dwarf \n";
     std::cin >> ancestryNumber;
     if (ancestryNumber == 1){
+        class Human humanObject;
         charSheet.setCharAncestry(humanObject.getAncestryName());
     }
     else if (ancestryNumber == 2){
+        class Elf elfObject;
         charSheet.setCharAncestry(elfObject.getAncestryName());
     }
     else if (ancestryNumber == 3){
+        class Dwarf dwarfObject;
         charSheet.setCharAncestry(dwarfObject.getAncestryName());
     }
     if (isTest){
@@ -46,11 +64,8 @@ void nameSelection(CharSheet charSheet, const std::string& str, bool isTest, con
 void creationDriver(){
     {
         CharSheet characterSheet;
-        class Human a;
-        class Elf b;
-        class Dwarf c;
         nameSelection(characterSheet, "What is the player's name?: \n", true, "playerName");
         nameSelection(characterSheet, "What is the character's name?: \n", true, "characterName");
-        ancestrySelection(characterSheet, a, b, c, true);
+        ancestrySelection(characterSheet, true);
     }
 }
