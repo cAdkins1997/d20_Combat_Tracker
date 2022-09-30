@@ -8,68 +8,116 @@ Elf::Elf() = default;
 
 Elf::~Elf() = default;
 
-int Elf::getInitialHitPoints1() const {
+const std::string &Elf::getAncestryName() const {
+    return ancestryName;
+}
+
+void Elf::setAncestryName(const std::string &ancestryName) {
+    Ancestries::setAncestryName(ancestryName);
+}
+
+int Elf::getInitialHitPoints() const {
     return initialHitPoints;
 }
 
-void Elf::setInitialHitPoints1(int initialHitPoints) {
-    Elf::initialHitPoints = initialHitPoints;
+void Elf::setInitialHitPoints(int initialHitPoints) {
+    Ancestries::setInitialHitPoints(initialHitPoints);
 }
 
-int Elf::getSpeed1() const {
+int Elf::getSpeed() const {
     return speed;
 }
 
-void Elf::setSpeed1(int speed) {
-    Elf::speed = speed;
+void Elf::setSpeed(int speed) {
+    Ancestries::setSpeed(speed);
 }
 
-int Elf::getAncestralBoostDex1() const {
+int Elf::getAncestralBoostStr() const {
+    return ancestralBoostSTR;
+}
+
+void Elf::setAncestralBoostStr(int ancestralBoostStr) {
+    Ancestries::setAncestralBoostStr(ancestralBoostStr);
+}
+
+int Elf::getAncestralBoostDex() const {
     return ancestralBoostDEX;
 }
 
-void Elf::setAncestralBoostDex1(int ancestralBoostDex) {
-    ancestralBoostDEX = ancestralBoostDex;
+void Elf::setAncestralBoostDex(int ancestralBoostDex) {
+    Ancestries::setAncestralBoostDex(ancestralBoostDex);
 }
 
-int Elf::getAncestralBoostCon1() const {
+int Elf::getAncestralBoostCon() const {
     return ancestralBoostCON;
 }
 
-void Elf::setAncestralBoostCon1(int ancestralBoostCon) {
-    ancestralBoostCON = ancestralBoostCon;
+void Elf::setAncestralBoostCon(int ancestralBoostCon) {
+    Ancestries::setAncestralBoostCon(ancestralBoostCon);
 }
 
-int Elf::getAncestralBoostInt1() const {
+int Elf::getAncestralBoostInt() const {
     return ancestralBoostINT;
 }
 
-void Elf::setAncestralBoostInt1(int ancestralBoostInt) {
-    ancestralBoostINT = ancestralBoostInt;
+void Elf::setAncestralBoostInt(int ancestralBoostInt) {
+    Ancestries::setAncestralBoostInt(ancestralBoostInt);
 }
 
-const std::string &Elf::getSize1() const {
+int Elf::getAncestralBoostWis() const {
+    return ancestralBoostWIS;
+}
+
+void Elf::setAncestralBoostWis(int ancestralBoostWis) {
+    Ancestries::setAncestralBoostWis(ancestralBoostWis);
+}
+
+int Elf::getAncestralBoostCha() const {
+    return ancestralBoostCHA;
+}
+
+void Elf::setAncestralBoostCha(int ancestralBoostCha) {
+    Ancestries::setAncestralBoostCha(ancestralBoostCha);
+}
+
+int Elf::getAncestralAbilityBoosts() const {
+    return ancestralAbilityBoosts;
+}
+
+void Elf::setAncestralAbilityBoosts(int ancestralAbilityBoosts) {
+    Ancestries::setAncestralAbilityBoosts(ancestralAbilityBoosts);
+}
+
+int Elf::getAncestralBonusFeats() const {
+    return ancestralBonusFeats;
+}
+
+void Elf::setAncestralBonusFeats(int ancestralBonusFeats) {
+    Ancestries::setAncestralBonusFeats(ancestralBonusFeats);
+}
+
+const std::string &Elf::getSize() const {
     return size;
 }
 
-void Elf::setSize1(const std::string &size) {
-    Elf::size = size;
+void Elf::setSize(const std::string &size) {
+    Ancestries::setSize(size);
 }
 
-const std::vector<std::string> &Elf::getType1() const {
+const std::vector<std::string> &Elf::getType() const {
     return type;
 }
 
-void Elf::setType1(const std::vector<std::string> &type) {
-    Elf::type = type;
+void Elf::setType(const std::vector<std::string> &type) {
+    Ancestries::setType(type);
 }
 
-const std::vector<std::string> &Elf::getLanguages1() const {
+const std::vector<std::string> &Elf::getLanguages() const {
     return languages;
 }
 
-void Elf::setLanguages1(const std::vector<std::string> &languages) {
-    Elf::languages = languages;
+void Elf::setLanguages(const std::vector<std::string> &languages) {
+    Ancestries::setLanguages(languages);
 }
 
 const std::vector<std::string> &Elf::getValidLanguages() const {
@@ -77,7 +125,7 @@ const std::vector<std::string> &Elf::getValidLanguages() const {
 }
 
 void Elf::setValidLanguages(const std::vector<std::string> &validLanguages) {
-    Elf::validLanguages = validLanguages;
+    Ancestries::setValidLanguages(validLanguages);
 }
 
 const std::vector<std::string> &Elf::getImmunities() const {
@@ -85,14 +133,21 @@ const std::vector<std::string> &Elf::getImmunities() const {
 }
 
 void Elf::setImmunities(const std::vector<std::string> &immunities) {
-    Elf::immunities = immunities;
+    Ancestries::setImmunities(immunities);
 }
 
-const std::string &Elf::getVisionType1() const {
+int Elf::getAncestralBoostLang() const {
+    return ancestralAbilityBoosts;
+}
+
+void Elf::setAncestralBoostLang(int ancestralBoostLang) {
+    Ancestries::setAncestralBoostLang(ancestralBoostLang);
+}
+
+const std::string &Elf::getVisionType() const {
     return visionType;
 }
 
-void Elf::setVisionType1(const std::string &visionType) {
-    Elf::visionType = visionType;
+void Elf::setVisionType(const std::string &visionType) {
+    Ancestries::setVisionType(visionType);
 }
-

@@ -73,12 +73,6 @@ build CMakeFiles/d20_Combat_Tracker.dir/CharCreationHelperFunctions.cpp.obj: CXX
   OBJECT_DIR = CMakeFiles\d20_Combat_Tracker.dir
   OBJECT_FILE_DIR = CMakeFiles\d20_Combat_Tracker.dir
 
-build CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Ancestry.cpp.obj: CXX_COMPILER__d20_Combat_Tracker_Debug C$:/Users/ulver/CLionProjects/d20-Combat-Tracker/Content/Ancestries/Ancestry.cpp || cmake_object_order_depends_target_d20_Combat_Tracker
-  DEP_FILE = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries\Ancestry.cpp.obj.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles\d20_Combat_Tracker.dir
-  OBJECT_FILE_DIR = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries
-
 build CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Human.cpp.obj: CXX_COMPILER__d20_Combat_Tracker_Debug C$:/Users/ulver/CLionProjects/d20-Combat-Tracker/Content/Ancestries/Human.cpp || cmake_object_order_depends_target_d20_Combat_Tracker
   DEP_FILE = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries\Human.cpp.obj.d
   FLAGS = -g -std=gnu++23
@@ -97,6 +91,12 @@ build CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Dwarf.cpp.obj: CXX_CO
   OBJECT_DIR = CMakeFiles\d20_Combat_Tracker.dir
   OBJECT_FILE_DIR = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries
 
+build CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Ancestries.cpp.obj: CXX_COMPILER__d20_Combat_Tracker_Debug C$:/Users/ulver/CLionProjects/d20-Combat-Tracker/Content/Ancestries/Ancestries.cpp || cmake_object_order_depends_target_d20_Combat_Tracker
+  DEP_FILE = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries\Ancestries.cpp.obj.d
+  FLAGS = -g -std=gnu++23
+  OBJECT_DIR = CMakeFiles\d20_Combat_Tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles\d20_Combat_Tracker.dir\Content\Ancestries
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target d20_Combat_Tracker
@@ -105,7 +105,7 @@ build CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Dwarf.cpp.obj: CXX_CO
 #############################################
 # Link the executable d20_Combat_Tracker.exe
 
-build d20_Combat_Tracker.exe: CXX_EXECUTABLE_LINKER__d20_Combat_Tracker_Debug CMakeFiles/d20_Combat_Tracker.dir/main.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/CharSheet.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/selectionEnums.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/CharCreationHelperFunctions.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Ancestry.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Human.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Elf.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Dwarf.cpp.obj
+build d20_Combat_Tracker.exe: CXX_EXECUTABLE_LINKER__d20_Combat_Tracker_Debug CMakeFiles/d20_Combat_Tracker.dir/main.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/CharSheet.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/selectionEnums.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/CharCreationHelperFunctions.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Human.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Elf.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Dwarf.cpp.obj CMakeFiles/d20_Combat_Tracker.dir/Content/Ancestries/Ancestries.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\d20_Combat_Tracker.dir

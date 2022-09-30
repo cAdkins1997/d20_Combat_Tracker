@@ -5,10 +5,11 @@
 #ifndef D20_COMBAT_TRACKER_ELF_H
 #define D20_COMBAT_TRACKER_ELF_H
 
+#include <string>
+#include <vector>
+#include "Ancestries.h"
 
-#include "Ancestry.h"
-
-class Elf : public Ancestry {
+class Elf : public Ancestries  {
 protected:
     std::string ancestryName = "Elf";
     int initialHitPoints = 6;
@@ -25,51 +26,81 @@ protected:
 
 public:
     Elf();
-    ~Elf() override;
+    ~Elf();
 
-    int getInitialHitPoints1() const;
+public:
+    virtual const std::string &getAncestryName() const;
 
-    void setInitialHitPoints1(int initialHitPoints);
+    void setAncestryName(const std::string &ancestryName) override;
 
-    int getSpeed1() const;
+    int getInitialHitPoints() const override;
 
-    void setSpeed1(int speed);
+    void setInitialHitPoints(int initialHitPoints) override;
 
-    int getAncestralBoostDex1() const;
+    int getSpeed() const override;
 
-    void setAncestralBoostDex1(int ancestralBoostDex);
+    void setSpeed(int speed) override;
 
-    int getAncestralBoostCon1() const;
+    int getAncestralBoostStr() const override;
 
-    void setAncestralBoostCon1(int ancestralBoostCon);
+    void setAncestralBoostStr(int ancestralBoostStr) override;
 
-    int getAncestralBoostInt1() const;
+    int getAncestralBoostDex() const override;
 
-    void setAncestralBoostInt1(int ancestralBoostInt);
+    void setAncestralBoostDex(int ancestralBoostDex) override;
 
-    const std::string &getSize1() const;
+    int getAncestralBoostCon() const override;
 
-    void setSize1(const std::string &size);
+    void setAncestralBoostCon(int ancestralBoostCon) override;
 
-    const std::vector<std::string> &getType1() const;
+    int getAncestralBoostInt() const override;
 
-    void setType1(const std::vector<std::string> &type);
+    void setAncestralBoostInt(int ancestralBoostInt) override;
 
-    const std::vector<std::string> &getLanguages1() const;
+    int getAncestralBoostWis() const override;
 
-    void setLanguages1(const std::vector<std::string> &languages);
+    void setAncestralBoostWis(int ancestralBoostWis) override;
+
+    int getAncestralBoostCha() const override;
+
+    void setAncestralBoostCha(int ancestralBoostCha) override;
+
+    int getAncestralAbilityBoosts() const override;
+
+    void setAncestralAbilityBoosts(int ancestralAbilityBoosts) override;
+
+    int getAncestralBonusFeats() const override;
+
+    void setAncestralBonusFeats(int ancestralBonusFeats) override;
+
+    const std::string &getSize() const;
+
+    void setSize(const std::string &size) override;
+
+    const std::vector<std::string> &getType() const;
+
+    void setType(const std::vector<std::string> &type) override;
+
+    const std::vector<std::string> &getLanguages() const;
+
+    void setLanguages(const std::vector<std::string> &languages) override;
 
     const std::vector<std::string> &getValidLanguages() const;
 
-    void setValidLanguages(const std::vector<std::string> &validLanguages);
+    void setValidLanguages(const std::vector<std::string> &validLanguages) override;
 
     const std::vector<std::string> &getImmunities() const;
 
-    void setImmunities(const std::vector<std::string> &immunities);
+    void setImmunities(const std::vector<std::string> &immunities) override;
 
-    const std::string &getVisionType1() const;
+    int getAncestralBoostLang() const override;
 
-    void setVisionType1(const std::string &visionType);
+    void setAncestralBoostLang(int ancestralBoostLang) override;
+
+    const std::string &getVisionType() const;
+
+    void setVisionType(const std::string &visionType) override;
+
 };
 
 

@@ -7,7 +7,7 @@
 
 
 #include <string>
-#include "selectionEnums.h"
+#include "Content/Ancestries/Ancestries.h"
 
 class CharSheet {
 protected:
@@ -23,26 +23,21 @@ public:
     virtual ~CharSheet();
 
 public:
+    const std::string &getPlayerName() const;
 
-    const std::string &getCharacterClass() const;
+    void setPlayerName(const std::string &playerName);
 
-    void setCharacterClass(const std::string &characterClass);
+    const std::string &getCharacterName() const;
+
+    void setCharacterName(const std::string &characterName);
+
+    const std::string &getCharClass() const;
+
+    void setCharClass(const std::string &charClass);
 
     const std::string &getCharAncestry() const;
 
     void setCharAncestry(const std::string &charAncestry);
-
-    const std::string &getPlayerName();
-
-    void setPlayerName(const std::string &playerName);
-
-    const std::string &getCharacterName();
-
-    void setCharacterName(const std::string &characterName);
-
-    std::basic_string<char> getCharClass() ;
-
-    void setCharClass(ClassesEnum charClass);
 };
 
 

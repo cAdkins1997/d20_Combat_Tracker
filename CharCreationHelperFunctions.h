@@ -9,12 +9,14 @@
 #include <iostream>
 #include "selectionEnums.h"
 #include "CharSheet.h"
-#include "Content/Ancestries/Ancestry.h"
+#include "Content/Ancestries/Human.h"
+#include "Content/Ancestries/Elf.h"
+#include "Content/Ancestries/Dwarf.h"
 
 void creationDriver();
 
 void nameSelection(CharSheet charSheet, const std::string& str, bool isTest, const std::string& nameType);
-void ancestrySelection(CharSheet charSheet, bool isTest);
+void ancestrySelection(CharSheet charSheet, const class Human& humanObject, const class Elf& elfObject, const class Dwarf& dwarfObject, bool isTest);
 
 std::string ObjectToString();
 
