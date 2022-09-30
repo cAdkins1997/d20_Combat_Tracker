@@ -1,6 +1,6 @@
 # d20-Combat-Tracker
 
-This is a combat tracker and character sheet handeler built for d20 pen and paper RPG game. While the early implementation is built around Pathfinder 2E, I plan to expand this to also be ale to handle other d20 systems. Currently this is restricted to be a terminal application, but I plan to add a GUI to it once I have added a few other features.
+This is a combat tracker and character sheet handeler built for d20 pen and paper RPG games. While the early implementation is built around Pathfinder 2E, I plan to expand this to also be ale to handle other d20 systems. Currently this is restricted to be a terminal application, but I plan to add a GUI to it once I have added a few other features.
 
 Currently character creation itself is handled by a number of helper functions that are called by a function called creationDriver() in the main method. The character sheet is an object that gets instantiated when creationDriver() gets called, the plan is to have multiple of these objects and to save their state to files so that multiple character sheet files can be saved and reused by the user.
 
